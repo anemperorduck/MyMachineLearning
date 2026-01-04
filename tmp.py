@@ -1,13 +1,3 @@
-def add(a,b):
-    a += 1
-    b += 1
-    return a+b
+from keras.datasets import mnist
 
-def main():
-    a = 1
-    b = 2
-    sum = add(a,b)
-    print(sum)
-
-if __name__ == '__main__':
-    main()
+(X_train, y_train), (X_test, y_test) = mnist.load_data()
